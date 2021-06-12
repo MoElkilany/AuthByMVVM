@@ -13,6 +13,7 @@
 		101E8F4626750F2500E301A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101E8F4426750F2500E301A1 /* LaunchScreen.storyboard */; };
 		10A7440F267514510060FA14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7440D267514510060FA14 /* LoginViewController.swift */; };
 		10A74410267514510060FA14 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A7440E267514510060FA14 /* LoginViewController.xib */; };
+		6236BD93F2E906833F15D0A4 /* Pods_AuthByMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE51A11A5103768B2B581E5 /* Pods_AuthByMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		101E8F4726750F2500E301A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10A7440D267514510060FA14 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		10A7440E267514510060FA14 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3BE51A11A5103768B2B581E5 /* Pods_AuthByMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthByMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6716A7C628E99EDACAE15E /* Pods-AuthByMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthByMVVM.debug.xcconfig"; path = "Target Support Files/Pods-AuthByMVVM/Pods-AuthByMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		8F26045518235D157B287722 /* Pods-AuthByMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthByMVVM.release.xcconfig"; path = "Target Support Files/Pods-AuthByMVVM/Pods-AuthByMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6236BD93F2E906833F15D0A4 /* Pods_AuthByMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				101E8F3826750F1E00E301A1 /* AuthByMVVM */,
 				101E8F3726750F1E00E301A1 /* Products */,
+				DD140F5D5A69D293806EF556 /* Pods */,
+				77698836F0299039085A628B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +146,24 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		77698836F0299039085A628B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BE51A11A5103768B2B581E5 /* Pods_AuthByMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD140F5D5A69D293806EF556 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C6716A7C628E99EDACAE15E /* Pods-AuthByMVVM.debug.xcconfig */,
+				8F26045518235D157B287722 /* Pods-AuthByMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 101E8F4A26750F2500E301A1 /* Build configuration list for PBXNativeTarget "AuthByMVVM" */;
 			buildPhases = (
+				00AA0C815DACC79EB79FA741 /* [CP] Check Pods Manifest.lock */,
 				101E8F3226750F1E00E301A1 /* Sources */,
 				101E8F3326750F1E00E301A1 /* Frameworks */,
 				101E8F3426750F1E00E301A1 /* Resources */,
+				356B90C3B3BAE4965832BEF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +230,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00AA0C815DACC79EB79FA741 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthByMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		356B90C3B3BAE4965832BEF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthByMVVM/Pods-AuthByMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthByMVVM/Pods-AuthByMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthByMVVM/Pods-AuthByMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		101E8F3226750F1E00E301A1 /* Sources */ = {
@@ -347,6 +416,7 @@
 		};
 		101E8F4B26750F2500E301A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C6716A7C628E99EDACAE15E /* Pods-AuthByMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -366,6 +436,7 @@
 		};
 		101E8F4C26750F2500E301A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F26045518235D157B287722 /* Pods-AuthByMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

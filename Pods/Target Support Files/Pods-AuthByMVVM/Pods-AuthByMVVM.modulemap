@@ -1,0 +1,6 @@
+framework module Pods_AuthByMVVM {
+  umbrella header "Pods-AuthByMVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}
