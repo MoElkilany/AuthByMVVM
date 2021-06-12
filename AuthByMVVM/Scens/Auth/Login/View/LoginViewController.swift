@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  AuthByMVVM
 //
 //  Created by Mohamed Elkilany on 12/06/2021.
@@ -7,13 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .red
+
     }
 
 
+  
 }
-

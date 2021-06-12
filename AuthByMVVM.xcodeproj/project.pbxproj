@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		101E8F3A26750F1E00E301A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E8F3926750F1E00E301A1 /* AppDelegate.swift */; };
 		101E8F3C26750F1E00E301A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E8F3B26750F1E00E301A1 /* SceneDelegate.swift */; };
-		101E8F3E26750F1E00E301A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E8F3D26750F1E00E301A1 /* ViewController.swift */; };
-		101E8F4126750F1E00E301A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101E8F3F26750F1E00E301A1 /* Main.storyboard */; };
 		101E8F4326750F2500E301A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101E8F4226750F2500E301A1 /* Assets.xcassets */; };
 		101E8F4626750F2500E301A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101E8F4426750F2500E301A1 /* LaunchScreen.storyboard */; };
+		10A7440F267514510060FA14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7440D267514510060FA14 /* LoginViewController.swift */; };
+		10A74410267514510060FA14 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A7440E267514510060FA14 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		101E8F3626750F1E00E301A1 /* AuthByMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthByMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		101E8F3926750F1E00E301A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		101E8F3B26750F1E00E301A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		101E8F3D26750F1E00E301A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		101E8F4026750F1E00E301A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		101E8F4226750F2500E301A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101E8F4526750F2500E301A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		101E8F4726750F2500E301A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10A7440D267514510060FA14 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		10A7440E267514510060FA14 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,87 @@
 		101E8F3826750F1E00E301A1 /* AuthByMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				101E8F3926750F1E00E301A1 /* AppDelegate.swift */,
-				101E8F3B26750F1E00E301A1 /* SceneDelegate.swift */,
-				101E8F3D26750F1E00E301A1 /* ViewController.swift */,
-				101E8F3F26750F1E00E301A1 /* Main.storyboard */,
-				101E8F4226750F2500E301A1 /* Assets.xcassets */,
-				101E8F4426750F2500E301A1 /* LaunchScreen.storyboard */,
-				101E8F4726750F2500E301A1 /* Info.plist */,
+				101E8F522675137D00E301A1 /* StoryBoard */,
+				101E8F502675133300E301A1 /* Scens */,
+				101E8F4F2675132F00E301A1 /* Core */,
+				101E8F4E2675132400E301A1 /* Resources */,
 			);
 			path = AuthByMVVM;
+			sourceTree = "<group>";
+		};
+		101E8F4E2675132400E301A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				101E8F4226750F2500E301A1 /* Assets.xcassets */,
+				101E8F4726750F2500E301A1 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		101E8F4F2675132F00E301A1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				101E8F3926750F1E00E301A1 /* AppDelegate.swift */,
+				101E8F3B26750F1E00E301A1 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		101E8F502675133300E301A1 /* Scens */ = {
+			isa = PBXGroup;
+			children = (
+				10A74408267513FA0060FA14 /* Auth */,
+			);
+			path = Scens;
+			sourceTree = "<group>";
+		};
+		101E8F522675137D00E301A1 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				101E8F4426750F2500E301A1 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		10A74408267513FA0060FA14 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				10A74409267514020060FA14 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		10A74409267514020060FA14 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				10A7440C2675143C0060FA14 /* ViewModel */,
+				10A7440B267514320060FA14 /* Model */,
+				10A7440A267514220060FA14 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		10A7440A267514220060FA14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10A7440D267514510060FA14 /* LoginViewController.swift */,
+				10A7440E267514510060FA14 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10A7440B267514320060FA14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10A7440C2675143C0060FA14 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +198,7 @@
 			files = (
 				101E8F4626750F2500E301A1 /* LaunchScreen.storyboard in Resources */,
 				101E8F4326750F2500E301A1 /* Assets.xcassets in Resources */,
-				101E8F4126750F1E00E301A1 /* Main.storyboard in Resources */,
+				10A74410267514510060FA14 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				101E8F3E26750F1E00E301A1 /* ViewController.swift in Sources */,
+				10A7440F267514510060FA14 /* LoginViewController.swift in Sources */,
 				101E8F3A26750F1E00E301A1 /* AppDelegate.swift in Sources */,
 				101E8F3C26750F1E00E301A1 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +218,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		101E8F3F26750F1E00E301A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				101E8F4026750F1E00E301A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		101E8F4426750F2500E301A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,15 +352,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUMG9R88LL;
-				INFOPLIST_FILE = AuthByMVVM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AuthByMVVM/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MVVM.AuthByMVVM;
+				PRODUCT_BUNDLE_IDENTIFIER = AuthByMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,15 +371,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUMG9R88LL;
-				INFOPLIST_FILE = AuthByMVVM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AuthByMVVM/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MVVM.AuthByMVVM;
+				PRODUCT_BUNDLE_IDENTIFIER = AuthByMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

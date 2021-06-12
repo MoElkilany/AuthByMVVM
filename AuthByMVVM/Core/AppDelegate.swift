@@ -11,10 +11,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let splashNC  = UINavigationController(rootViewController:LoginViewController())
+        window.rootViewController = splashNC
+        window.makeKeyAndVisible()
+        self.window = window
+
+//        IQKeyboardManager.shared.enable  = true
+//        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+//        hasLocationPermission()
         return true
+ 
     }
 
     // MARK: UISceneSession Lifecycle
