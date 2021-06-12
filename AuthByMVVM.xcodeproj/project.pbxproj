@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		101E8F4626750F2500E301A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101E8F4426750F2500E301A1 /* LaunchScreen.storyboard */; };
 		10A7440F267514510060FA14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7440D267514510060FA14 /* LoginViewController.swift */; };
 		10A74410267514510060FA14 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A7440E267514510060FA14 /* LoginViewController.xib */; };
+		10A7441E26752CFB0060FA14 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7441D26752CFB0060FA14 /* LoginView.swift */; };
 		6236BD93F2E906833F15D0A4 /* Pods_AuthByMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE51A11A5103768B2B581E5 /* Pods_AuthByMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		101E8F4726750F2500E301A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10A7440D267514510060FA14 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		10A7440E267514510060FA14 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		10A7441D26752CFB0060FA14 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3BE51A11A5103768B2B581E5 /* Pods_AuthByMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthByMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6716A7C628E99EDACAE15E /* Pods-AuthByMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthByMVVM.debug.xcconfig"; path = "Target Support Files/Pods-AuthByMVVM/Pods-AuthByMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		8F26045518235D157B287722 /* Pods-AuthByMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthByMVVM.release.xcconfig"; path = "Target Support Files/Pods-AuthByMVVM/Pods-AuthByMVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				10A7440D267514510060FA14 /* LoginViewController.swift */,
 				10A7440E267514510060FA14 /* LoginViewController.xib */,
+				10A7441D26752CFB0060FA14 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,7 +163,6 @@
 				5C6716A7C628E99EDACAE15E /* Pods-AuthByMVVM.debug.xcconfig */,
 				8F26045518235D157B287722 /* Pods-AuthByMVVM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,6 +282,7 @@
 			files = (
 				10A7440F267514510060FA14 /* LoginViewController.swift in Sources */,
 				101E8F3A26750F1E00E301A1 /* AppDelegate.swift in Sources */,
+				10A7441E26752CFB0060FA14 /* LoginView.swift in Sources */,
 				101E8F3C26750F1E00E301A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

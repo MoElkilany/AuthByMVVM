@@ -14,7 +14,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="LoginView" customModule="AuthByMVVM" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -61,6 +61,11 @@
                 <constraint firstItem="CcU-6B-NNK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Fnb-6a-4Ts"/>
                 <constraint firstItem="CcU-6B-NNK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ho7-7w-xhC"/>
             </constraints>
+            <connections>
+                <outlet property="loginBtn" destination="ZFS-Et-kmw" id="gj2-pz-t15"/>
+                <outlet property="passwordTF" destination="PIi-vs-rEN" id="pui-nu-RAm"/>
+                <outlet property="phoneTF" destination="XYL-3e-eU6" id="zY3-9e-2Eq"/>
+            </connections>
             <point key="canvasLocation" x="111.59420289855073" y="108.48214285714285"/>
         </view>
     </objects>

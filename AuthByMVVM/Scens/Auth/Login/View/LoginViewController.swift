@@ -9,16 +9,20 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-//    @IBOutlet weak var phoneTF: UITextField!
-//    @IBOutlet weak var passwordTF: UITextField!
-//    @IBOutlet weak var loginBtn: UIButton!
-//
-
+    var mainView: LoginView {
+        return view as! LoginView
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
-
+        mainView.passwordTF.text = "123456"
     }
 
 
