@@ -9,6 +9,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+//    @IBOutlet weak var phoneTF: UITextField!
+//    @IBOutlet weak var passwordTF: UITextField!
+//    @IBOutlet weak var loginBtn: UIButton!
+//
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
