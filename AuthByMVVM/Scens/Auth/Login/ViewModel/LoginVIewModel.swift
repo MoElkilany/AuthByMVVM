@@ -13,7 +13,12 @@ class LoginViewModel {
     
     var phoneBehavior = BehaviorRelay<String>(value: "")
     var passwordBehavior = BehaviorRelay<String>(value: "")
-
+    
+   private var loginModelSubject = PublishSubject<UserModelResponse>()
+    var loginModelObservable : Observable <UserModelResponse> {
+        return loginModelSubject
+    }
+    
 }
 
 //MARK: Hit login network
@@ -23,6 +28,7 @@ extension LoginViewModel {
             switch respons {
             case .success(let responseValue):
                 print("responseValue" , responseValue)
+                self.loginModelSubject.onNext(responseValue)
             case .failure(let error):
                 print("error",error)
             }
