@@ -24,6 +24,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         mainView.passwordTF.text = "123456"
     }
+    
+    
 
 
   
