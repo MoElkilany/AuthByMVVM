@@ -8,13 +8,7 @@
 import UIKit
 
 class LoginView: UIView {
-    
-    
         @IBOutlet weak var phoneTF: UITextField!
         @IBOutlet weak var passwordTF: UITextField!
         @IBOutlet weak var loginBtn: UIButton!
-    
-
-   
-
 }
